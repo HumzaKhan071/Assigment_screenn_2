@@ -60,7 +60,7 @@ class MyApp extends StatelessWidget {
         ),
         body: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.fromLTRB(60, 15, 15, 15),
+            padding: EdgeInsets.all(10),
             child: Column(
               children: [
                 Column(
@@ -85,15 +85,15 @@ class MyApp extends StatelessWidget {
                         Text(
                           "Original Fried Shrimp",
                           style: TextStyle(
-                              fontSize: 45, fontWeight: FontWeight.bold),
+                              fontSize: 30, fontWeight: FontWeight.bold),
                         ),
                         RichText(
                           text: TextSpan(
                             text: '£',
                             style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 30,
-                            ),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 30,
+                                color: Colors.orange),
                             children: <TextSpan>[
                               TextSpan(
                                   text: '6.9',
